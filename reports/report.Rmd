@@ -1,0 +1,29 @@
+---
+title: "Report"
+author: "John Lövrot"
+date: "`r format(Sys.Date(), format = '%Y-%m-%d')`"
+output: 
+  html_document:
+    theme: cosmo
+    fig_width: 8
+    fig_height: 6
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  fig.path = "graphics/report-",
+  echo = FALSE, warning = FALSE, message = FALSE
+)
+```
+
+```{r load_project, echo=FALSE}
+setwd("..")
+ProjectTemplate::load.project()
+setwd("reports")
+```
+
+```{r}
+theme_set(theme_minimal())
+scale_colour_discrete <- scale_colour_ki
+scale_fill_discrete <- scale_fill_ki
+```
